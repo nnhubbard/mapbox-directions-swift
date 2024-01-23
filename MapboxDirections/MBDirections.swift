@@ -1,3 +1,5 @@
+import CoreLocation
+
 typealias JSONDictionary = [String: Any]
 
 /// Indicates that an error occurred in MapboxDirections.

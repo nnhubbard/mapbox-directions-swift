@@ -1,4 +1,5 @@
-import Foundation
+import CoreLocation
+
 /**
  A `Tracepoint` represents a location matched to the road network.
  */

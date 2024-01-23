@@ -1,4 +1,6 @@
+import CoreLocation
 import Polyline
+import MapboxDirectionsObjc
 
 /**
  A `TransportType` specifies the mode of transportation used for part of a route.
