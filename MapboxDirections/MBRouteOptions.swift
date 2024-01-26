@@ -1,3 +1,6 @@
+import CoreLocation
+import MapboxDirectionsObjc
+
 /**
  A `RouteOptions` object is a structure that specifies the criteria for results returned by the Mapbox Directions API.
 
