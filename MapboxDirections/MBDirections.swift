@@ -303,7 +303,7 @@ open class Directions: NSObject {
     @objc(URLForCalculatingDirectionsWithOptions:)
     open func url(forCalculating options: DirectionsOptions) -> URL {
         let params = options.params + [
-            URLQueryItem(name: "access_token", value: accessToken),
+            URLQueryItem(name: "key", value: accessToken),
         ]
         
         let unparameterizedURL = URL(string: options.path, relativeTo: apiEndpoint)!
