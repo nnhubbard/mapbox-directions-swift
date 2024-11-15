@@ -150,6 +150,11 @@ open class Waypoint: NSObject, NSCopying, NSSecureCoding {
     @objc open var name: String?
     
     /**
+     Additional information about the waypoint
+     */
+    @objc open var userInfo: [String: String]?
+    
+    /**
      A boolean value indicating whether arriving on opposite side is allowed.
      
      This property has no effect if `RouteOptions.includesSteps` is set to `false`.
