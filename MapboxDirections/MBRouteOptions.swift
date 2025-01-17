@@ -163,7 +163,10 @@ open class RouteOptions: DirectionsOptions {
                 let coordinate = CLLocationCoordinate2D(geoJSON: location)
                 let possibleAPIName = api["name"] as? String
                 let apiName = possibleAPIName?.nonEmptyString
-                return Waypoint(coordinate: coordinate, name: local.name ?? apiName)
+                let waypoint = Waypoint(coordinate: coordinate, name: local.name ?? apiName)
+                waypoint.image = local.image
+                waypoint.userInfo = local.userInfo
+                return waypoint
             }
         }
         
